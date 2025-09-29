@@ -1,0 +1,29 @@
+# Snippet for inserting href
+snippet hr "The hypperref package's \href{}{} for url links"
+\href{${1:url}}{${2:display name}}$0
+endsnippet
+
+# Snippet for any general environemtn
+snippet env "A new random LaTex environment"
+\begin{${1:Name of Environment}}
+	${2:${VISUAL:}}
+\end{$1}
+$0
+endsnippet
+
+# Snippet for the figure environment
+snippet fig "Triggering the figure specific, centered, here environment"
+\begin{figure}
+	\centering
+	\includegraphic[width=$1]{${2:${VISUAL:}}}
+	\caption{${3:Insert Caption}}
+	\ref{fig:${4:Insert the Reference Tag}}
+\end{figure}
+$0
+endsnippet
+
+# Snippet for Bold Font
+snippet tb "Creating a \textbf{} environment"
+\textbf{${1:${VISUAL}}}
+$0
+endsnippet

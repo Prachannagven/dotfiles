@@ -1,0 +1,12 @@
+# Make it easier to create new snippets
+snippet snip "A snippet for writing Ultisnips snippets" b
+`!p snip.rv = "snippet"` ${1:trigger} "${2:Description}" ${3:options}
+$4
+`!p snip.rv = "endsnippet"`
+$0
+endsnippet
+
+# Short command to add the VISUAL block
+snippet vis "A snippet to add the visual block"
+\${$1:{VISUAL:}}
+endsnippet

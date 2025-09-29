@@ -1,0 +1,40 @@
+# Include this code block at the top of a *.snippets file...
+# ----------------------------- #
+global !p
+def math():
+  return vim.eval('vimtex#syntax#in_mathzone()') == '1'
+endglobal
+# ----------------------------- #
+
+context "math()"
+# Snippet for fractions
+snippet ff "The LaTeX \frac{}{} command"
+\frac{$1}{$2}$0
+endsnippet
+
+# Quickly insert a zero subscript
+context "math()"
+snippet "([a-zA-Z]|[\}\)\]\|'])00" "Automatic 0 subscript" rA
+`!p snip.rv = match.group(1)`_{0}
+endsnippet
+
+snippet eq "Creating an equation command"
+\begin{equation}
+	${1:{VALUE}}
+\end{equation}
+$0
+endsnippet
+
+snippet align "Creating an align environment"
+\begin{align}
+	${1:{VALUE}}
+\end{align}
+$0
+endsnippet
+
+# Snippet to add a text environemnt within math
+context "math()"
+snippet tex "creating a text environment"
+\text{${1:{VISUAL}}
+$0
+endsnippet

@@ -1,0 +1,47 @@
+# Mouse mappings
+map <Button8> navigate previous
+map <Button9> navigate next
+
+# Base16 OneDark
+# Author: Lalit Magant (http://github.com/tilal6991)
+
+#set default-bg                  "#282c34"
+#set default-fg                  "#c8ccd4"
+#
+#set statusbar-fg                "#61afef"
+#set statusbar-bg                "#3e4451"
+#
+#set inputbar-bg                 "#282c34"
+#set inputbar-fg                 "#c8ccd4"
+#
+#set notification-bg             "#282c34"
+#set notification-fg             "#c8ccd4"
+#
+#set notification-error-bg       "#282c34"
+#set notification-error-fg       "#e06c75"
+#
+#set notification-warning-bg     "#282c34"
+#set notification-warning-fg     "#e06c75"
+
+# Fix highlight colors for better contrast
+#set highlight-color             "#61afef"   # light foreground
+#set highlight-active-color      "#61afef"   # blue highlight when active
+#set highlight-transparency      "0"
+#
+#set completion-bg               "#353b45"
+#set completion-fg               "#c8ccd4"
+#set highlight-fg 				"#f7d702"
+#
+#set completion-highlight-fg     "#ffffff"   # White text
+#set completion-highlight-bg     "#528bff"   # Darker blue background for contrast
+#
+#set recolor-lightcolor          "#282c34"
+#set recolor-darkcolor           "#b6bdca"
+#
+#set recolor                     "false"
+#set recolor-keephue             "false"
+#set recolor
+
+# Clipboard
+set selection-clipboard clipboard
+
